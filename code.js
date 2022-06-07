@@ -29,6 +29,7 @@ function clickFileButton(){
 
 function clickNumberButton(){
 
+    document.getElementById("outputnumber").innerHTML = ""
     number = document.getElementById("inputnumber").value
 
     try{
@@ -42,9 +43,9 @@ function clickNumberButton(){
             throw 'Informe um valor maior que 5 e menor que 10'
         }
 
-        if ((isNaN(number)))  // Vai verificar que se o character é um numero se for ok!!!    ||  Agora se for Letras, Simbolos e/ou characteres especiais o NaN vai barrar.
+        if ((isNaN(number))) 
         {
-            throw 'Erro + erro JavaScript'
+            throw 'Você inseriu um texto'
         }
     }
         
